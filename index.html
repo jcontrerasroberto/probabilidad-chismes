@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOS LIOSOS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <h2 class="liosos">LOS LIOSOS</h2>
+        <div class="nombres">
+            <p>Contreras Barrita José Roberto</p>
+            <p>Fonseca Ramos Angel Gabriel</p>
+            <p>Toledo Espinosa Cristina Aline</p>
+        </div>
+        
+        <img src="chisme.png" alt="" class="imagenchisme">
+        <br>
+        <br>
+        <div class="descripcion">
+            <p>
+                Suponga que la <b>probabilidad</b> de que una determinada persona crea un rumor
+                acerca de las transgresiones de cierta actriz famosa es : <b>P</b>. <br><br>¿Cuál es la
+                probabilidad de que <b>x-&eacute;sima</b> persona que escuche este rumor sea la <b>k-&eacute;sima</b> en creerlo?  
+            </p>
+            <br>
+        </div>
+        <form>
+            <input type="number" class="email" placeholder="p" id="p" min="0" max="1" step="0.1">
+            <br />
+            <input type="number" class="pwd" placeholder="Numero de ensayos (x)" id="x" min="1">
+            <br>
+
+            <input type="number" class="pwd" placeholder="Numero de exitos (k)" id="k" min="1">
+            <br><br>
+
+            <input type="number" class="pwd" placeholder="Numero de simulaciones" id="sim" min="1" max="25">
+        </form>
+        <br />
+        <button class="register" onclick="calcular()">
+            <span>Calcular y simular</span>
+        </button>
+
+
+        <div class="resultadoTeorico" id="teorico">
+            <p>El resultado teorico es <span id="resultado" class="resultado"></span></p>
+        </div>
+        <div id="simulaciones" class="simulaciones">
+            
+        </div>
+
+
+    </div>
+</body>
+
+</html>
